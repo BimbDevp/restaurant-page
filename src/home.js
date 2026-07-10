@@ -4,7 +4,7 @@ import menuImage2 from "./image/Fried_shrimp.jpeg";
 import menuImage3 from "./image/Boiled_clams.jpeg";
 
 
-export default function createHome() {
+export default function createHomePage() {
     const container = document.querySelector("#content");
 
     const heroSection = document.createElement("div");
