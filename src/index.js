@@ -1,3 +1,4 @@
+import "./style.css";
 import createHomePage from "./home.js";
 
 const content = document.querySelector("#content");

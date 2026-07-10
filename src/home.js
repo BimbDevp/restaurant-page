@@ -6,11 +6,12 @@ import menuImage3 from "./image/Boiled_clams.jpeg";
 
 export default function createHomePage() {
     const container = document.createElement("div");
+    container.classList.add("home-container");
 
     const heroSection = document.createElement("div");
-    heroSection.classList.add("home");
+    heroSection.classList.add("hero-section");
     const headline = document.createElement("h1");
-    headline.textContent = "Delicious Food Awaits You";
+    headline.textContent = "Delicious Food Is Waiting For You";
     const btn = document.createElement("button");
     btn.textContent = "Explore Menu";
     
