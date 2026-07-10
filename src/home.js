@@ -5,7 +5,7 @@ import menuImage3 from "./image/Boiled_clams.jpeg";
 
 
 export default function createHomePage() {
-    const container = document.querySelector("#content");
+    const container = document.createElement("div");
 
     const heroSection = document.createElement("div");
     heroSection.classList.add("home");
