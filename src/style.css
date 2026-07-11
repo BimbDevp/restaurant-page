@@ -1,25 +1,33 @@
+@font-face {
+    font-family: "myCustomFont";
+    src: url("fonts/ltinternet-regular-webfont.woff") format("woff"),
+    url("fonts/ltinternet-regular-webfont.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
 
-
-body {
-    background-color: #f9f6f0;
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    font-family: "myCustomFont", sans-serif;
+    background-color: #faf9f6;;
+}
+
 header {
     text-align: center;
-    background-color: transparent;
     padding: 2rem;
-    background-color: #7a9d82;
-    box-shadow: 0 15px 10px  rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    box-shadow: 0 4px 20px  rgba(0, 0, 0, 0.05);
 }
 
 #content {
     padding: 1rem;
     display: flex;
     justify-content: center;
-    height: 100vh;
 }
 
 nav {
@@ -27,30 +35,79 @@ nav {
     justify-content: space-around;
 }
 nav button {
+    font-weight: bold;
     border: none;
-    background-color: #f4d03f;
+    background: transparent;
     color: #2c3e50;
     font-size: 1.6rem;
-    width: 150px;
-    height: 50px;
-    cursor: pointer;
-    border-radius: 10px;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
 
+nav button:hover {
+    color: #ff5c00;
+    cursor: pointer;
 }
 
 .home-container {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-
+    text-align: center;
+    
 }
 
 .hero-section {
-    background-image: url("image/hero_section.jpeg");
-    grid-column: 1/3;
-    height: 50vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("image/hero_section.jpeg");
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #f9f6f0;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+.hero-section button {
+    color: #fff;
+    padding: 1rem;
+    background-color: #ff5c00;
+    border-radius: 12px;
+    border: none;
+    font-weight: 400;
+    transition: background-color 0.3s ease;
+}
+.hero-section button:hover {
+    cursor: pointer;
+    background-color: #ff6e1a;
+}
+
+.copy {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    font-weight: 600;
+    margin-top: 2rem;
 }
 
 .home-card {
-    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.home-card img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.home-card img:hover {
+    transform: translateY(-10px);
 }

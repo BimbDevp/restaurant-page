@@ -31,6 +31,7 @@ export default function createHomePage() {
     image3.src = menuImage3;
     
     const copy = document.createElement("h3"); 
+    copy.classList.add("copy")
     copy.textContent = "Our Costumers' Favourites";
 
 
@@ -41,12 +42,14 @@ export default function createHomePage() {
     card2.appendChild(image2);
     card3.appendChild(image3);
     
+    
     cardContainer.appendChild(card1);
     cardContainer.appendChild(card2);
     cardContainer.appendChild(card3);
-    cardContainer.appendChild(copy);
+    
 
     container.appendChild(heroSection);
+    container.appendChild(copy);
     container.appendChild(cardContainer);
 
     return container;
