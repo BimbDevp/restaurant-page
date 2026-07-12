@@ -71,7 +71,8 @@ nav button:hover {
     text-align: center;
 }
 
-.hero-section button {
+.hero-section button,
+.order-btn {
     color: #fff;
     padding: 1rem;
     background-color: #ff5c00;
@@ -80,7 +81,8 @@ nav button:hover {
     font-weight: 400;
     transition: background-color 0.3s ease;
 }
-.hero-section button:hover {
+.hero-section button:hover,
+.order-btn:hover {
     cursor: pointer;
     background-color: #ff6e1a;
 }
@@ -108,6 +110,57 @@ nav button:hover {
     transition: transform 0.3s ease;
 }
 
-.home-card img:hover {
+.home-card img:hover,
+.menu-card:hover {
     transform: translateY(-10px);
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    padding: 4rem 2rem;
+}
+
+.about-image {
+    flex: 1;
+    width: 50%;
+    border-radius: 20px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+    flex: 1;
+    line-height: 1.8;
+    color: #2c3e50;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.menu-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.menu-card img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.menu-card p {
+    color: #ff5c00;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.text-container {
+    padding: 1rem;
 }
