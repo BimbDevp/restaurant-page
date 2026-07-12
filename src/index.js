@@ -1,6 +1,7 @@
 import "./style.css";
 import createHomePage from "./home.js";
 import createAboutPage from "./about.js";
+import createMenuPage from "./menu.js";
 
 const content = document.querySelector("#content");
 const homeBtn = document.querySelector(".home");
@@ -21,6 +22,10 @@ loadTab(createHomePage);
 
 aboutBtn.addEventListener("click", () => {
     loadTab(createAboutPage);
+})
+
+menuBtn.addEventListener("click", () => {
+    loadTab(createMenuPage);
 })
 
 homeBtn.addEventListener("click", () => {

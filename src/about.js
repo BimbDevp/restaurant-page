@@ -18,6 +18,7 @@ export default function createAboutPage() {
     card2.src = chefGrilling;
     const textContainer2 = document.createElement("div");
     const headline2 = document.createElement("h3");
+    headline2.textContent = "Kitchen & Operational Philosophy"
     const copy2 = document.createElement("p");
     copy2.textContent = "Behind the doors of our kitchen lies a harmonious workflow. We believe that efficient kitchen operations and meticulous attention to detail in food preparation are key to ensuring consistent flavour in every dish we serve";
 
